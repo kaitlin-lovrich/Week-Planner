@@ -13,10 +13,18 @@ $cancel.addEventListener('click', function (event) {
   $modal.className = 'modal-box overlay hidden';
 });
 
-function generateDOM() {
+function generateDOM(entry) {
   const $tr = document.createElement('tr');
-  const $td = document.createElement('td');
-  $tr.appendChild($td);
+  const $td1 = document.createElement('td');
+  $td1.textContent = entry.time;
+  const $td2 = document.createElement('td');
+  $td2.textContent = entry.day;
+  const $td3 = document.createElement('td');
+  $td3.textContent = entry.info;
+
+  $tr.appendChild($td1);
+  $tr.appendChild($td2);
+  $tr.appendChild($td3);
   return $tr;
 }
 
@@ -28,12 +36,17 @@ function submit(event) {
     info: $form.elements.info.value
   };
   events.push(eventEntry);
-  const $eventDOM = generateDOM();
-
+  const $eventDOM = generateDOM(eventEntry);
   $tbody.prepend($eventDOM);
   $form.reset();
-  console.log('test', events);
+
   $modal.className = 'modal-box overlay hidden';
 }
-
 $confirm.addEventListener('click', submit);
+
+document.addEventListener('DOMContentLoaded', function (event) {
+  for (let i = 0; events.length > 1; i++) {
+    const $newTd = generateDOM(events[i]);
+    $tbody.appendChild($newTd);
+  }
+});
