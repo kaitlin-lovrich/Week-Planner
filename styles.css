@@ -139,9 +139,9 @@ textarea:hover {
 
 #add-event:hover {
   background-color: white;
-  border: solid 2px blue;
-  color: blue;
-  box-shadow: 4px 4px 4px blue;
+  border: solid 2px #106efe;
+  color: #106efe;
+  box-shadow: 4px 4px 4px #106efe;
   transition: 1s ease;
 }
 
@@ -156,4 +156,24 @@ textarea:hover {
 
 .hidden {
   display: none;
+}
+
+.edit {
+  margin-left: 5rem;
+  background-color: #106efe;
+  color: white;
+}
+
+.edit:hover {
+  text-decoration: underline;
+}
+
+.delete {
+  margin-left: 7rem;
+  background-color: #dc3744;
+  color: white;
+}
+
+.delete:hover {
+  text-decoration: underline;
 }

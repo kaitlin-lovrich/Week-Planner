@@ -18,13 +18,21 @@ function generateDOM(entry) {
   const $td1 = document.createElement('td');
   $td1.textContent = entry.time;
   const $td2 = document.createElement('td');
-  $td2.textContent = entry.day;
+  $td2.textContent = entry.info;
   const $td3 = document.createElement('td');
-  $td3.textContent = entry.info;
+  const $editButton = document.createElement('button');
+  $editButton.setAttribute('class', 'edit');
+  $editButton.textContent = 'Edit';
+  const $deleteButton = document.createElement('button');
+  $deleteButton.setAttribute('class', 'delete');
+  $deleteButton.textContent = 'Delete';
 
   $tr.appendChild($td1);
   $tr.appendChild($td2);
   $tr.appendChild($td3);
+  $td3.appendChild($editButton);
+  $td3.appendChild($deleteButton);
+
   return $tr;
 }
 
