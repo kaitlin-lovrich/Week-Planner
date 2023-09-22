@@ -17,20 +17,23 @@ function generateDOM() {
   const $tr = document.createElement('tr');
   const $td = document.createElement('td');
   $tr.appendChild($td);
+  return $tr;
 }
 
 function submit(event) {
-  // const event = {
-  //   time: $form.elements.time.value,
-  //   day: $form.elements.day.value,
-  //   info: $form.elements.info.value,
-  // }
-  // $tbody.appendChild($tr);
-  const eventDom = generateDOM();
+  event.preventDefault();
+  const eventEntry = {
+    time: $form.elements.time.value,
+    day: $form.elements.day.value,
+    info: $form.elements.info.value
+  };
+  events.push(eventEntry);
+  const $eventDOM = generateDOM();
 
-  console.log(generateDOM());
+  $tbody.prepend($eventDOM);
   $form.reset();
-
+  console.log('test', events);
+  $modal.className = 'modal-box overlay hidden';
 }
 
 $confirm.addEventListener('click', submit);

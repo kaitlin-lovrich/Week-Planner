@@ -1,4 +1,4 @@
-/* exported todos */
+/* exported events */
 
 let events = [];
 const previousEventsJSON = localStorage.getItem('javascript-local-storage');

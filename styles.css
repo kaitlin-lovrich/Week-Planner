@@ -118,7 +118,6 @@ textarea:hover {
 #cancel:hover {
   box-shadow: 4px 4px 4px red;
   color: red;
-  rotate: 360deg;
   transition: 0.5s ease;
   background-color: white;
   border: 2px red solid;
@@ -133,7 +132,6 @@ textarea:hover {
   background-color: white;
   border: solid 2px #1b8756;
   color: #1b8756;
-  rotate: 360deg;
   box-shadow: 4px 4px 4px #1b8756;
   transition: 0.5s ease;
 }
@@ -142,9 +140,8 @@ textarea:hover {
   background-color: white;
   border: solid 2px blue;
   color: blue;
-  rotate: 360deg;
   box-shadow: 4px 4px 4px blue;
-  transition: 0.5s ease;
+  transition: 1s ease;
 }
 
 .overlay {
