@@ -77,9 +77,9 @@
       </div>
     </div>
     <div id="modal" class="modal-box overlay hidden">
-      <div class="modal-content">
-        <label for="time" >Time of Event: </label>
-        <select>
+      <form class="modal-content">
+        <label for="time">Time of Event: </label>
+        <select name="time">
           <option value="0100">0100</option>
           <option value="0200">0200</option>
           <option value="0300">0300</option>
@@ -104,12 +104,12 @@
           <option value="sunday">Sunday</option>
         </select>
         <label for="info">Event Information</label>
-        <textarea id="info" rows="10"></textarea>
+        <textarea id="info" rows="10" name="info"></textarea>
         <div class="buttons">
           <button type="submit" id="cancel">Cancel</button>
           <button type="submit" id="confirm">Confirm</button>
         </div>
-      </div>
+      </form>
     </div>
   </div>
   <script src="main.js"></script>
