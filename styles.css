@@ -47,3 +47,16 @@
   margin: 3rem auto 0;
   text-align: center;
 }
+
+th {
+  background-color: white;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(222, 222, 222);
+}
+
+table {
+  border: solid 2px rgb(222, 222, 222);
+  width: 100%;
+}
