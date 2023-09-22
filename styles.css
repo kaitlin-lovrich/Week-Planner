@@ -44,12 +44,13 @@
 .event-button {
   /* margin-top: 1rem; */
   width: 15%;
-  margin: 3rem auto 0;
+  margin: 3rem auto 1rem;
   text-align: center;
 }
 
 th {
   background-color: white;
+  text-align: left;
 }
 
 tr:nth-child(odd) {
@@ -59,4 +60,8 @@ tr:nth-child(odd) {
 table {
   border: solid 2px rgb(222, 222, 222);
   width: 100%;
+}
+
+p {
+  font-size: 0.7rem;
 }
