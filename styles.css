@@ -1,0 +1,26 @@
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.column-full {
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.text-align-center {
+  text-align: center;
+}
