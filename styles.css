@@ -1,6 +1,7 @@
 .container {
   width: 800px;
   margin: 0 auto;
+  line-height: 2rem;
 }
 
 .row {
@@ -22,5 +23,27 @@
 }
 
 .text-align-center {
+  text-align: center;
+}
+
+#day-select {
+  width: 15%;
+  text-align: center;
+  margin: auto;
+  padding: 0.2rem;
+}
+
+#add-event {
+  padding: 0.5rem;
+  background-color: #6c747b;
+  color: white;
+  border-radius: 0.2rem;
+  border: none;
+}
+
+.event-button {
+  /* margin-top: 1rem; */
+  width: 15%;
+  margin: 3rem auto 0;
   text-align: center;
 }

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Week Planner</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div class="container">
     <div class="row justify-content-center">
@@ -20,23 +22,32 @@
     </div>
     <div class="row">
       <div class="column-full text-align-center display-flex">
-        <div>
-        <label for="day-select">Day of Week</label>
-        <select id="day-select" name="days">
-          <option value="monday">Monday</option>
-          <option>Tuesday</option>
-          <option>Wednesday</option>
-          <option>Thursday</option>
-          <option>Friday</option>
-          <option>Saturday</option>
-          <option>Sunday</option>
-        </select>
+        <div class="row">
+          <div class="column-full text-align-center display-flex ">
+            <label for="day-select">Day of Week</label>
+            <select id="day-select" name="days">
+              <option value="monday">Monday</option>
+              <option>Tuesday</option>
+              <option>Wednesday</option>
+              <option>Thursday</option>
+              <option>Friday</option>
+              <option>Saturday</option>
+              <option>Sunday</option>
+            </select>
+          </div>
         </div>
       </div>
-
+    </div>
+    <div class="row">
+      <div class="column-full">
+        <div class="event-button">
+          <button type="button" id="add-event">Add New Event</button>
+        </div>
+      </div>
     </div>
   </div>
 
   <script src="main.js"></script>
 </body>
+
 </html>
